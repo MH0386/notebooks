@@ -165,7 +165,7 @@ jobs:
       - name: Install devenv.sh
         run: nix profile install nixpkgs#devenv
       - name: Cache _site
-        uses: actions/cache@8b402f58fbc84540c8b491a91e594a4576fec3d7 # v5.0.2
+        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
         with:
           path: _site
           key: ${{ runner.os }}-quarto-${{ hashFiles('**/uv.lock') }}
