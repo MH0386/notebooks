@@ -10,6 +10,7 @@ resolution-markers = [
 [manifest]
 members = [
     "autoencoder",
+    "car-price-prediction",
     "inception-network",
     "iris-classification-from-scratch",
     "k-means",
@@ -89,6 +90,11 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "tensorflow", specifier = ">=2.20.0" },
 ]
+
+[[package]]
+name = "car-price-prediction"
+version = "0.0.1"
+source = { virtual = "notebooks/data-analysis/car-price-prediction" }
 
 [[package]]
 name = "certifi"
