@@ -71,6 +71,19 @@
         reorder_keys = true;
       };
     };
+    ".ls-lint.yml".yaml = {
+      ls = {
+        ".dir" = "kebab-case";
+        ".ipynb" = "kebab-case";
+      };
+      ignore = [
+        ".devenv"
+        ".direnv"
+        ".git"
+        ".github"
+        ".idea"
+      ];
+    };
   };
 
   # https://devenv.sh/basics/
@@ -122,10 +135,12 @@
   '';
 
   # https://devenv.sh/tasks/
-  # tasks = {
-  #   "myproj:setup".exec = "mytool build";
-  #   "devenv:enterShell".after = [ "myproj:setup" ];
-  # };
+  tasks = {
+    "lint:ls-lint" = {
+      exec = "${lib.getExe pkgs.ls-lint}";
+      after = [ "devenv:enterTest" ];
+    };
+  };
 
   # https://devenv.sh/tests/
   # enterTest = ''
