@@ -22,10 +22,6 @@ jobs:
       pull-requests: write
     if: github.event_name != 'schedule'
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
-        with:
-          egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Setup Devenv
@@ -42,10 +38,6 @@ jobs:
     needs: compatibility
     if: github.event_name != 'schedule'
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
-        with:
-          egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
@@ -71,10 +63,6 @@ jobs:
     needs: clean_jupyter
     if: github.event_name != 'schedule'
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
-        with:
-          egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
@@ -94,10 +82,6 @@ jobs:
       pull-requests: write
     if: github.event_name != 'schedule'
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
-        with:
-          egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
@@ -126,10 +110,6 @@ jobs:
       contents: write
     if: github.event_name != 'schedule'
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
-        with:
-          egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Setup Devenv
@@ -159,10 +139,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     if: github.event_name != 'pull_request' && github.event_name != 'schedule'
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
-        with:
-          egress-policy: audit
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
@@ -175,10 +151,6 @@ jobs:
       contents: write
     if: github.event_name == 'schedule'
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
-        with:
-          egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Setup Devenv
