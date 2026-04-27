@@ -28,14 +28,8 @@ jobs:
           egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - name: Install Nix
-        uses: cachix/install-nix-action@ab739621df7a23f52766f9ccc97f38da6b7af14f # v31.10.5
-      - name: Cache
-        uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
-        with:
-          name: devenv
-      - name: Install devenv.sh
-        run: nix profile install nixpkgs#devenv
+      - name: Setup Devenv
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
       - name: Check Compatibility
         run: devenv shell compatibility-check
   clean_jupyter:
@@ -56,14 +50,8 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           token: ${{ secrets.GH_TOKEN }}
-      - name: Install Nix
-        uses: cachix/install-nix-action@ab739621df7a23f52766f9ccc97f38da6b7af14f # v31.10.5
-      - name: Cache
-        uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
-        with:
-          name: devenv
-      - name: Install devenv.sh
-        run: nix profile install nixpkgs#devenv
+      - name: Setup Devenv
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
       - name: Cleaning Jupyter Notebooks
         run: devenv shell clean_jupyter
       - name: Commit cleaned Jupyter Notebooks
@@ -91,14 +79,8 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           token: ${{ secrets.GH_TOKEN }}
-      - name: Install Nix
-        uses: cachix/install-nix-action@ab739621df7a23f52766f9ccc97f38da6b7af14f # v31.10.5
-      - name: Cache
-        uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
-        with:
-          name: devenv
-      - name: Install devenv.sh
-        run: nix profile install nixpkgs#devenv
+      - name: Setup Devenv
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
       - name: Checking Jupyter Notebooks
         run: devenv shell check_jupyter
   test:
@@ -120,14 +102,8 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           token: ${{ secrets.GH_TOKEN }}
-      - name: Install Nix
-        uses: cachix/install-nix-action@ab739621df7a23f52766f9ccc97f38da6b7af14f # v31.10.5
-      - name: Cache
-        uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
-        with:
-          name: devenv
-      - name: Install devenv.sh
-        run: nix profile install nixpkgs#devenv
+      - name: Setup Devenv
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
       - name: Test
         run: devenv test
       - name: Commit pre-commit fixes
@@ -156,14 +132,8 @@ jobs:
           egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - name: Install Nix
-        uses: cachix/install-nix-action@ab739621df7a23f52766f9ccc97f38da6b7af14f # v31.10.5
-      - name: Cache
-        uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
-        with:
-          name: devenv
-      - name: Install devenv.sh
-        run: nix profile install nixpkgs#devenv
+      - name: Setup Devenv
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
       - name: Cache _site
         uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
@@ -211,14 +181,8 @@ jobs:
           egress-policy: audit
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - name: Install Nix
-        uses: cachix/install-nix-action@ab739621df7a23f52766f9ccc97f38da6b7af14f # v31.10.5
-      - name: Cache
-        uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
-        with:
-          name: devenv
-      - name: Install devenv.sh
-        run: nix profile install nixpkgs#devenv
+      - name: Setup Devenv
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
       - name: Update devenv lockfile
         run: devenv update
       - name: Commit updated devenv Lockfile
