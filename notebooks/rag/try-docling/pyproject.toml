@@ -3,5 +3,5 @@
   description = "Add your description here"
   name = "try-docling"
   readme = "README.md"
-  requires-python = "<3.14"
+  requires-python = "<3.15"
   version = "0.1.0"

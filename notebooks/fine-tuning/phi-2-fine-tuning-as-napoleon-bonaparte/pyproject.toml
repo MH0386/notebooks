@@ -3,5 +3,5 @@
   description = "Add your description here"
   name = "phi-2-fine-tuning-as-napoleon-bonaparte"
   readme = "README.md"
-  requires-python = "<3.14"
+  requires-python = "<3.15"
   version = "0.0.1"
