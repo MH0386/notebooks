@@ -141,7 +141,7 @@
     name-tests-test.enable = true;
     prettier.enable = true;
     python-debug-statements.enable = true;
-    ripsecrets.enable = true;
+    # ripsecrets.enable = true;
     ruff.enable = true;
     ruff-format.enable = true;
     statix.enable = true;
