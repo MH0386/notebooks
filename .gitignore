@@ -21,3 +21,4 @@ devenv.local.yaml
 **/*.quarto_ipynb
 .taplo.toml
 .yamlfmt.yaml
+.ls-lint.yml
