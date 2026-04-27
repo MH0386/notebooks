@@ -1,8 +1,4 @@
-{
-  pkgs,
-  lib,
-  ...
-}:
+{ pkgs, lib, ... }:
 
 {
   files = {
@@ -86,29 +82,16 @@
     };
   };
 
-  # https://devenv.sh/basics/
-  env.GREET = "devenv";
-
-  # https://devenv.sh/packages/
   packages = [ pkgs.quarto ];
 
-  # https://devenv.sh/languages/
   languages.python = {
     enable = true;
-    # version = "3.14";
     uv = {
       enable = true;
       sync.enable = true;
     };
   };
 
-  # https://devenv.sh/processes/
-  # processes.dev.exec = "${lib.getExe pkgs.watchexec} -n -- ls -la";
-
-  # https://devenv.sh/services/
-  # services.postgres.enable = true;
-
-  # https://devenv.sh/scripts/
   scripts = {
     compatibility-check.exec = ''
       echo "Checking compatibility"
@@ -128,13 +111,6 @@
     '';
   };
 
-  # https://devenv.sh/basics/
-  enterShell = ''
-    ${lib.getExe pkgs.git} --version
-    ${lib.getExe pkgs.quarto} --version
-  '';
-
-  # https://devenv.sh/tasks/
   tasks = {
     "lint:ls-lint" = {
       exec = "${lib.getExe pkgs.ls-lint}";
@@ -142,13 +118,6 @@
     };
   };
 
-  # https://devenv.sh/tests/
-  # enterTest = ''
-  #   echo "Running tests"
-  #   git --version | grep --color=auto "${pkgs.git.version}"
-  # '';
-
-  # https://devenv.sh/git-hooks/
   git-hooks.hooks = {
     action-validator.enable = true;
     actionlint.enable = true;
@@ -217,5 +186,4 @@
   };
 
   difftastic.enable = true;
-  # See full reference at https://devenv.sh/reference/options/
 }
