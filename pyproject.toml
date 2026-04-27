@@ -1,5 +1,5 @@
 [project]
-  dependencies = ["ipykernel>=7.1.0"]
+  dependencies = ["ipykernel>=7.2.0"]
   description = "MH0386's Notebooks"
   name = "mh0386-notebooks"
   readme = "README.md"
