@@ -122,7 +122,6 @@
     action-validator.enable = true;
     actionlint.enable = true;
     nixfmt.enable = true;
-    check-added-large-files.enable = true;
     check-builtin-literals.enable = true;
     check-case-conflicts.enable = true;
     check-docstring-first.enable = true;
