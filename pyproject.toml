@@ -6,7 +6,7 @@
   version = "0.0.1"
 
 [dependency-groups]
-  dev = ["nb-clean>=4.0.1", "ruff>=0.14.14", "ty>=0.0.14"]
+  dev = ["nb-clean>=4.0.1", "ruff>=0.14.14", "ty>=0.0.29"]
 
 [tool.uv.workspace]
   members = [
