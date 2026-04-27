@@ -82,8 +82,6 @@
     };
   };
 
-  packages = [ pkgs.quarto ];
-
   languages.python = {
     enable = true;
     uv = {
