@@ -1,0 +1,7 @@
+[project]
+  dependencies = ["kagglehub[pandas-datasets]>=1.0.0"]
+  description = "Add your description here"
+  name = "motorcycle-data-analysis"
+  readme = "README.md"
+  requires-python = "<3.14"
+  version = "0.0.1"
