@@ -23,7 +23,6 @@ members = [
     "motorcycle-data-analysis",
     "naive-bayes-with-normal-distribution",
     "phi-2-fine-tuning-as-napoleon-bonaparte",
-    "product-recommendation",
     "text-processing",
     "try-docling",
     "word2vec",
@@ -526,7 +525,7 @@ source = { virtual = "notebooks/machine-learning/k-means" }
 
 [[package]]
 name = "kagglehub"
-version = "1.0.0"
+version = "1.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "kagglesdk" },
@@ -535,9 +534,9 @@ dependencies = [
     { name = "requests" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/98/b2/a542a926e47f0f6947d9fa7117b3a730edbf2a76fffc71e19b8755a58f33/kagglehub-1.0.0.tar.gz", hash = "sha256:21dc25d0279e2071f8b97cd9e1393d003ea5e054ea48f1e8139a39e4771e9a8d", size = 117315, upload-time = "2026-02-11T19:45:36.227Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/3c/4d0cef65da767f2ec57a1c1c77e28d91378150652b69e6ceec99798709b5/kagglehub-1.0.1.tar.gz", hash = "sha256:eae33eba423de222cf3993d99f5b33c5ff25f33d9ee8efe64236b479462c3c54", size = 117354, upload-time = "2026-04-28T22:08:47.935Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/18/78/08cec00ea05fd2469f9395da0306bb368c4ed275693be8d31473eafaf90c/kagglehub-1.0.0-py3-none-any.whl", hash = "sha256:9397f0c6af04cdefa6fa8734c31b42863e8741aad5832c6f3af52f1ecf8fe509", size = 70632, upload-time = "2026-02-11T19:45:34.626Z" },
+    { url = "https://files.pythonhosted.org/packages/70/14/7b1f40778a4c8930f46b5841902647396069ccaa21cb8e0779ee822ffa77/kagglehub-1.0.1-py3-none-any.whl", hash = "sha256:003b7f725cbd64cc852a84fd840cf1e1594c2aa13d72f8090ed6e4e178a65166", size = 70636, upload-time = "2026-04-28T22:08:46.878Z" },
 ]
 
 [package.optional-dependencies]
@@ -547,15 +546,15 @@ pandas-datasets = [
 
 [[package]]
 name = "kagglesdk"
-version = "0.1.21"
+version = "0.1.23"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "protobuf" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a5/a9/b7c061fa7b37880193af31ed6963a4752ee71cc4efa7f9337f96792dd6e1/kagglesdk-0.1.21.tar.gz", hash = "sha256:3a85c189bbf3ad9add563b77118e8c3982dfc03cfd4d39897db28bc56c61cf1a", size = 160519, upload-time = "2026-04-24T16:45:52.558Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/89/7f/80d1910fbb42d59e5845c16affa8496302a3334360e23d70c2adf492b31c/kagglesdk-0.1.23.tar.gz", hash = "sha256:62e89ae21ae29495e7e597d6160f378efcb0c8734a8c10eaf7f7607a60ac1f25", size = 164193, upload-time = "2026-05-01T15:49:16.666Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1d/5f/5634273da33299123f6bb3bfbf4e9ed002568b0ca41f925d8fab6d94e3e9/kagglesdk-0.1.21-py3-none-any.whl", hash = "sha256:e8bafe345165ad6058df71b4817a312fd9e21060b9deb3ba2894619185e5fbc8", size = 212679, upload-time = "2026-04-24T16:45:51.223Z" },
+    { url = "https://files.pythonhosted.org/packages/8f/4e/fead499e4e76f66203611ecee1032fc8da87f2ab59c3921c76b06334cbbf/kagglesdk-0.1.23-py3-none-any.whl", hash = "sha256:8966f7d99f59f2b769681e19a2cf52192b23be053de6875c06e66cd85c4f1dd1", size = 217784, upload-time = "2026-05-01T15:49:15.291Z" },
 ]
 
 [[package]]
@@ -766,7 +765,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "kagglehub", specifier = ">=1.0.0" },
+    { name = "kagglehub", specifier = ">=1.0.1" },
     { name = "pandas", specifier = ">=3.0.2" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
@@ -832,7 +831,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "kagglehub", extras = ["pandas-datasets"], specifier = ">=1.0.0" }]
+requires-dist = [{ name = "kagglehub", extras = ["pandas-datasets"], specifier = ">=1.0.1" }]
 
 [[package]]
 name = "naive-bayes-with-normal-distribution"
@@ -1075,17 +1074,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/cf/86/0248f086a84f01b37
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cb/28/3bfe2fa5a7b9c46fe7e13c97bda14c895fb10fa2ebf1d0abb90e0cea7ee1/platformdirs-4.5.1-py3-none-any.whl", hash = "sha256:d03afa3963c806a9bed9d5125c8f4cb2fdaf74a55ab60e5d59b3fde758104d31", size = 18731, upload-time = "2025-12-05T13:52:56.823Z" },
 ]
-
-[[package]]
-name = "product-recommendation"
-version = "0.1.0"
-source = { virtual = "notebooks/machine-learning/product-recommendation" }
-dependencies = [
-    { name = "pandas" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "pandas", specifier = ">=3.0.2" }]
 
 [[package]]
 name = "prompt-toolkit"
