@@ -23,7 +23,6 @@ members = [
     "motorcycle-data-analysis",
     "naive-bayes-with-normal-distribution",
     "phi-2-fine-tuning-as-napoleon-bonaparte",
-    "product-recommendation",
     "text-processing",
     "try-docling",
     "word2vec",
@@ -1075,17 +1074,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/cf/86/0248f086a84f01b37
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cb/28/3bfe2fa5a7b9c46fe7e13c97bda14c895fb10fa2ebf1d0abb90e0cea7ee1/platformdirs-4.5.1-py3-none-any.whl", hash = "sha256:d03afa3963c806a9bed9d5125c8f4cb2fdaf74a55ab60e5d59b3fde758104d31", size = 18731, upload-time = "2025-12-05T13:52:56.823Z" },
 ]
-
-[[package]]
-name = "product-recommendation"
-version = "0.1.0"
-source = { virtual = "notebooks/machine-learning/product-recommendation" }
-dependencies = [
-    { name = "pandas" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "pandas", specifier = ">=3.0.2" }]
 
 [[package]]
 name = "prompt-toolkit"
