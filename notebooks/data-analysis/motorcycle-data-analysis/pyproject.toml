@@ -1,5 +1,5 @@
 [project]
-  dependencies = ["kagglehub[pandas-datasets]>=1.0.0"]
+  dependencies = ["kagglehub[pandas-datasets]>=1.0.1"]
   description = "Add your description here"
   name = "motorcycle-data-analysis"
   readme = "README.md"
