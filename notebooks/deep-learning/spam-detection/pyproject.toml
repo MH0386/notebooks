@@ -1,0 +1,4 @@
+[project]
+  name = "spam-detection"
+  readme = "README.md"
+  version = "0.0.1"
