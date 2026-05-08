@@ -729,7 +729,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "kagglehub", specifier = ">=1.0.0" },
+    { name = "kagglehub", specifier = ">=1.0.1" },
     { name = "pandas", specifier = ">=3.0.2" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
@@ -807,7 +807,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "kagglehub", extras = ["pandas-datasets"], specifier = ">=1.0.0" }]
+requires-dist = [{ name = "kagglehub", extras = ["pandas-datasets"], specifier = ">=1.0.1" }]
 
 [[package]]
 name = "naive-bayes-with-normal-distribution"
