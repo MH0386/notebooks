@@ -16,6 +16,11 @@
       <excludeFolder url="file://$MODULE_DIR$/.devenv/state/venv" />
       <excludeFolder url="file://$MODULE_DIR$/.devenv" />
       <excludeFolder url="file://$MODULE_DIR$/.direnv" />
+      <excludeFolder url="file://$MODULE_DIR$/notebooks/deep-learning/spam-detection/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/notebooks/deep-learning/spam-detection/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/notebooks/deep-learning/spam-detection/.idea/shelf" />
+      <excludeFolder url="file://$MODULE_DIR$/notebooks/machine-learning/product-recommendation/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/notebooks/machine-learning/product-recommendation/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="uv (state)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
