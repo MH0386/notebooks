@@ -1,0 +1,7 @@
+[project]
+  dependencies = []
+  description = "Add your description here"
+  name = "car-price-prediction"
+  readme = "README.md"
+  requires-python = "<3.14"
+  version = "0.0.1"

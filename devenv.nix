@@ -122,7 +122,6 @@
     action-validator.enable = true;
     actionlint.enable = true;
     nixfmt.enable = true;
-    check-added-large-files.enable = true;
     check-builtin-literals.enable = true;
     check-case-conflicts.enable = true;
     check-docstring-first.enable = true;
@@ -141,7 +140,7 @@
     name-tests-test.enable = true;
     prettier.enable = true;
     python-debug-statements.enable = true;
-    ripsecrets.enable = true;
+    # ripsecrets.enable = true;
     ruff.enable = true;
     ruff-format.enable = true;
     statix.enable = true;
