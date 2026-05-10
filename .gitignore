@@ -22,3 +22,4 @@ devenv.local.yaml
 .taplo.toml
 .yamlfmt.yaml
 .ls-lint.yml
+.idea/
