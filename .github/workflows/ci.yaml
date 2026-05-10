@@ -25,7 +25,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
       - name: Check Compatibility
         run: devenv shell compatibility-check
   clean_jupyter:
@@ -43,7 +43,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
       - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
       - name: Cleaning Jupyter Notebooks
         run: devenv shell clean_jupyter
       - name: Commit cleaned Jupyter Notebooks
@@ -68,7 +68,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
       - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
       - name: Checking Jupyter Notebooks
         run: devenv shell check_jupyter
   test:
@@ -87,7 +87,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
       - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
       - name: Test
         run: devenv test
       - name: Commit pre-commit fixes
@@ -113,7 +113,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
       - name: Cache _site
         uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
@@ -154,7 +154,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@2f8ea0838cb2ec2d07c2fbaa9c52e6d8aebca7f0 # v0.0.72
+        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
       - name: Update devenv lockfile
         run: devenv update
       - name: Commit updated devenv Lockfile
