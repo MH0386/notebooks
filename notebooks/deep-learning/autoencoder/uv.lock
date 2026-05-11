@@ -64,7 +64,7 @@ dev = [
 requires-dist = [
     { name = "ipykernel", specifier = ">=7.2.0" },
     { name = "ipywidgets", specifier = ">=8.1.8" },
-    { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "matplotlib", specifier = ">=3.10.9" },
     { name = "numpy", specifier = ">=2.4.4" },
     { name = "tensorflow", extras = ["and-cuda"], specifier = ">=2.20.0" },
 ]
