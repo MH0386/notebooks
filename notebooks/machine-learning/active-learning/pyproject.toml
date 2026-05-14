@@ -20,4 +20,4 @@
   version = "0.0.1"
 
 [dependency-groups]
-  dev = ["ruff>=0.15.12", "ty>=0.0.35"]
+  dev = ["ruff>=0.15.13", "ty>=0.0.35"]
