@@ -8,7 +8,7 @@
     "pandas>=3.0.3",
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
-]
+  ]
   description = "Add your description here"
   name = "car-price-prediction"
   readme = "README.md"
