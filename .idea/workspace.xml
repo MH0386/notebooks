@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AIDiffSettings">
+    <option name="showAIDiff" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ed67931-5252-44c0-95bf-16c30e589142" name="Changes" comment="Update PyCharm configuration">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/data-analysis/car-price-prediction/notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/data-analysis/car-price-prediction/notebook.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/data-analysis/car-price-prediction/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/data-analysis/car-price-prediction/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="68" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MH0386&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MH0386/notebooks.git&quot;,
+    &quot;accountId&quot;: &quot;273bf515-1ca4-458b-8c99-6560b90c44bb&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.000000033067754" />
+      <entry key="MS500" value="1.0340882968662033" />
+      <entry key="S2" value="1.892319400791494" />
+      <entry key="S5" value="3.132181065519563" />
+      <entry key="S10" value="3.907120765175941" />
+      <entry key="S30" value="4.593252302470292" />
+      <entry key="S60" value="4.811020619238269" />
+      <entry key="M2" value="5.036977762924773" />
+      <entry key="M5" value="5.416782756513479" />
+      <entry key="M10" value="5.656482278719427" />
+      <entry key="M15" value="5.757407066135628" />
+      <entry key="M30" value="5.871315044989975" />
+      <entry key="H1" value="5.933688978291848" />
+      <entry key="H2" value="5.966336301282179" />
+      <entry key="H4" value="5.983039039881612" />
+      <entry key="D1" value="5.997155063363821" />
+      <entry key="W1" value="5.999593134633149" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9201876812650607" />
+      <entry key="MS500" value="1.01693232011715" />
+      <entry key="S2" value="1.8718514077241457" />
+      <entry key="S5" value="3.1102552823003022" />
+      <entry key="S10" value="3.89141069592121" />
+      <entry key="S30" value="4.586553630392806" />
+      <entry key="S60" value="4.807339504243538" />
+      <entry key="M2" value="5.034720638563876" />
+      <entry key="M5" value="5.415494026730246" />
+      <entry key="M10" value="5.655707158387971" />
+      <entry key="M15" value="5.756853019454076" />
+      <entry key="M30" value="5.871016825763295" />
+      <entry key="H1" value="5.933534038196506" />
+      <entry key="H2" value="5.966257302000666" />
+      <entry key="H4" value="5.982999148637251" />
+      <entry key="D1" value="5.997148359628288" />
+      <entry key="W1" value="5.999592175594319" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3DuSf3gf3WsCi32brM7PPFmGBzo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="notebooks" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-PY-261.24374.152" />
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ed67931-5252-44c0-95bf-16c30e589142" name="Changes" comment="" />
+      <created>1779130564834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779130564834</updated>
+      <workItem from="1779130565127" duration="1864000" />
+      <workItem from="1779132450749" duration="1844000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update PyCharm configuration">
+      <option name="closed" value="true" />
+      <created>1779134236732</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779134236732</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update PyCharm configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update PyCharm configuration" />
+  </component>
+</project>
