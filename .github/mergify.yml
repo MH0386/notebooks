@@ -12,3 +12,5 @@ pull_request_rules:
           - "check-success = DeepSource: Python"
     actions:
       queue:
+merge_protections_settings:
+  reporting_method: check-runs
