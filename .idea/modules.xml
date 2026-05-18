@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/my_ai_journey.iml" filepath="$PROJECT_DIR$/.idea/my_ai_journey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/active-learning-with-machine-learning.iml" filepath="$PROJECT_DIR$/.idea/active-learning-with-machine-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/autoencoder.iml" filepath="$PROJECT_DIR$/.idea/autoencoder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/car-price-prediction.iml" filepath="$PROJECT_DIR$/.idea/car-price-prediction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/inception-network.iml" filepath="$PROJECT_DIR$/.idea/inception-network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/iris-classification-from-scratch.iml" filepath="$PROJECT_DIR$/.idea/iris-classification-from-scratch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/k-means.iml" filepath="$PROJECT_DIR$/.idea/k-means.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/llama3-fine-tuning-as-napoleon-bonaparte.iml" filepath="$PROJECT_DIR$/.idea/llama3-fine-tuning-as-napoleon-bonaparte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/logistic-regression-from-scratch.iml" filepath="$PROJECT_DIR$/.idea/logistic-regression-from-scratch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/logistic-regression-with-k-fold.iml" filepath="$PROJECT_DIR$/.idea/logistic-regression-with-k-fold.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/logistic-regression-with-least-squares-technique.iml" filepath="$PROJECT_DIR$/.idea/logistic-regression-with-least-squares-technique.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/medical-insurance-cost-prediction.iml" filepath="$PROJECT_DIR$/.idea/medical-insurance-cost-prediction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/motorcycle-data-analysis.iml" filepath="$PROJECT_DIR$/.idea/motorcycle-data-analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/naive-bayes-with-normal-distribution.iml" filepath="$PROJECT_DIR$/.idea/naive-bayes-with-normal-distribution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/phi-2-fine-tuning-as-napoleon-bonaparte.iml" filepath="$PROJECT_DIR$/.idea/phi-2-fine-tuning-as-napoleon-bonaparte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/product-recommendation.iml" filepath="$PROJECT_DIR$/.idea/product-recommendation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spam-detection.iml" filepath="$PROJECT_DIR$/.idea/spam-detection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/text-processing.iml" filepath="$PROJECT_DIR$/.idea/text-processing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/try-docling.iml" filepath="$PROJECT_DIR$/.idea/try-docling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/word2vec.iml" filepath="$PROJECT_DIR$/.idea/word2vec.iml" />
     </modules>
   </component>
 </project>
