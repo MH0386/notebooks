@@ -4,7 +4,6 @@
     <content url="file://$MODULE_DIR$/notebooks/data-analysis/car-price-prediction">
       <excludeFolder url="file://$MODULE_DIR$/notebooks/data-analysis/car-price-prediction/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="uv (car-price-prediction)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
