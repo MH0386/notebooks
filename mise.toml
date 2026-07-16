@@ -1,0 +1,12 @@
+[tools]
+"aqua:quarto-dev/quarto-cli" = "latest"
+"pipx:nb-clean" = "latest"
+uv = "latest"
+
+[tasks]
+clean-jupyter = { run = "nb-clean clean -o -e ./notebooks/" }
+check-jupyter = { run = "nb-clean check -o -e ./notebooks/" }
+render = { run = "quarto render" }
+
+[settings]
+minimum_release_age = "0d"
