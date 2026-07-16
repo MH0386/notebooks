@@ -1,12 +1,13 @@
 [project]
-  dependencies = [
+dependencies = [
     "ipykernel>=7.3.0",
-    "matplotlib>=3.11.0",
-    "numpy>=2.5.1",
-    "tensorflow[and-cuda]>=2.21.0",
-  ]
-  description = "Add your description here"
-  name = "handwriting-recognition"
-  readme = "README.md"
-  requires-python = ">=3.13"
-  version = "0.1.0"
+    "ipywidgets>=8.1.8",
+    "matplotlib>=3.10.9",
+    "numpy>=1.26.4",
+    "tensorflow<2.11.0 ; sys_platform == 'win32' and python_version == '3.10'",
+    "tensorflow[and-cuda]>=2.21.0 ; sys_platform != 'win32'",
+]
+name = "handwriting-recognition"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "0.0.1"
