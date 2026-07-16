@@ -11,14 +11,4 @@ wheels/
 /site_libs/
 /_site/
 *.png
-.devenv*
-devenv.local.nix
-devenv.local.yaml
-.direnv
-.pre-commit-config.yaml
-.ruff.toml
-.yamllint.yaml
 **/*.quarto_ipynb
-.taplo.toml
-.yamlfmt.yaml
-.ls-lint.yml
