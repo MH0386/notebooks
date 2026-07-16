@@ -11,45 +11,26 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}
   cancel-in-progress: true
 jobs:
-  compatibility:
-    name: Check Dependency Compatibility
-    runs-on: ubuntu-latest
-    environment:
-      name: code_quality
-    permissions:
-      checks: write
-      contents: read
-      pull-requests: write
-    if: github.event_name != 'schedule'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-      - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
-      - name: Check Compatibility
-        run: devenv shell compatibility-check
   clean_jupyter:
     name: Clean Jupyter Notebooks
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    environment:
-      name: code_quality
-    needs: compatibility
+    environment: notebooks
     if: github.event_name != 'schedule'
     steps:
       - name: Checkout repository
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           token: ${{ secrets.GH_TOKEN }}
-      - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
+      - name: Setup Mise
+        uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
       - name: Cleaning Jupyter Notebooks
-        run: devenv shell clean_jupyter
+        run: mise run clean-jupyter
       - name: Commit cleaned Jupyter Notebooks
         uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
         with:
-          commit_message: "nb-clean: Apply Clean Jupyter Notebooks"
+          commit_message: "nb-clean: Clean Jupyter Notebooks"
           commit_options: --no-verify
   check_jupyter:
     name: Check Jupyter Notebooks
@@ -58,62 +39,31 @@ jobs:
       contents: read
       pull-requests: write
       checks: write
-    environment:
-      name: code_quality
+    environment: notebooks
     needs: clean_jupyter
     if: github.event_name != 'schedule'
     steps:
       - name: Checkout repository
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-      - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
+      - name: Setup Mise
+        uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
       - name: Checking Jupyter Notebooks
-        run: devenv shell check_jupyter
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    environment:
-      name: code_quality
-    permissions:
-      checks: write
-      contents: write
-      pull-requests: write
-    if: github.event_name != 'schedule'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-      - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
-      - name: Test
-        run: devenv test
-      - name: Commit pre-commit fixes
-        uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
-        if: success() || failure()
-        with:
-          commit_message: "devenv: Apply Fixes"
-          commit_options: --no-verify
+        run: mise run check-jupyter
   render:
     name: Render
     runs-on: ubuntu-latest
     needs:
-      - compatibility
-      - test
       - clean_jupyter
       - check_jupyter
-    environment:
-      name: build
+    environment: quarto
     permissions:
       contents: write
     if: github.event_name != 'schedule'
     steps:
       - name: Checkout repository
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-      - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
+      - name: Setup Mise
+        uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
       - name: Cache _site
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
@@ -121,7 +71,7 @@ jobs:
           key: ${{ runner.os }}-quarto-${{ hashFiles('**/uv.lock') }}
           restore-keys: ${{ runner.os }}-quarto-
       - name: Build Web
-        run: devenv shell render
+        run: mise run render
       - name: Upload artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
@@ -135,30 +85,10 @@ jobs:
       id-token: write
       contents: read
     environment:
-      name: github-pages
+      name: quarto
       url: ${{ steps.deployment.outputs.page_url }}
     if: github.event_name != 'pull_request' && github.event_name != 'schedule'
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
-  update_devenv:
-    name: Update devenv.sh
-    runs-on: ubuntu-latest
-    environment:
-      name: devenv
-    permissions:
-      contents: write
-    if: github.event_name == 'schedule'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-      - name: Setup Devenv
-        uses: AlphaSphereDotAI/helpr_action/ci/setup/devenv@9c1ce69965cda95a280f4da04d418ea8eaf7bf50 # v0.0.84
-      - name: Update devenv lockfile
-        run: devenv update
-      - name: Commit updated devenv Lockfile
-        uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
-        with:
-          commit_message: "devenv: Update devenv Lock file"
-          commit_options: --no-verify
