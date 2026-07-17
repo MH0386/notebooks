@@ -1,7 +1,6 @@
 [project]
-  dependencies = []
-  description = "Add your description here"
-  name = "text-processing"
-  readme = "README.md"
-  requires-python = "<3.14"
-  version = "0.0.1"
+name = "text-processing"
+version = "0.0.1"
+readme = "README.md"
+requires-python = "<3.14"
+dependencies = []
