@@ -11,6 +11,17 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}
   cancel-in-progress: true
 jobs:
+  check-deps:
+    name: Check Dependency Compatibility
+    runs-on: ubuntu-latest
+    environment: dependency
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - name: Setup Mise
+        uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
+      - name: Cleaning Jupyter Notebooks
+        run: mise run check-deps
   clean_jupyter:
     name: Clean Jupyter Notebooks
     runs-on: ubuntu-latest

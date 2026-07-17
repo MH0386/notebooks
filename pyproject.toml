@@ -1,0 +1,9 @@
+[tool.uv.workspace]
+members = [
+    "notebooks/data-analysis/*",
+    "notebooks/deep-learning/*",
+    "notebooks/fine-tuning/*",
+    "notebooks/machine-learning/*",
+    "notebooks/pre-processing/*",
+    "notebooks/rag/*"
+]
