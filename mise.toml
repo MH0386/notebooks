@@ -4,6 +4,7 @@
 uv = "latest"
 
 [tasks]
+check-deps = { run = "uv lock --check" }
 clean-jupyter = { run = "nb-clean clean -o -e ./notebooks/" }
 check-jupyter = { run = "nb-clean check -o -e ./notebooks/" }
 render = { run = "quarto render" }
