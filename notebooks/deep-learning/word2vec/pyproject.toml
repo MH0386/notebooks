@@ -1,7 +1,6 @@
 [project]
-  dependencies = []
-  description = "Add your description here"
-  name = "word2vec"
-  readme = "README.md"
-  requires-python = "<3.14"
-  version = "0.0.1"
+name = "word2vec"
+version = "0.0.1"
+readme = "README.md"
+requires-python = "<3.14"
+dependencies = []
