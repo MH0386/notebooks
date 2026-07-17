@@ -1,5 +1,9 @@
 [project]
-  dependencies = [
+name = "active-learning-with-machine-learning"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
     "gradio>=6.14.0",
     "imbalanced-learn>=0.14.1",
     "ipykernel>=7.2.0",
@@ -13,11 +17,7 @@
     "scikit-activeml>=1.0.0",
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
-  ]
-  name = "active-learning-with-machine-learning"
-  readme = "README.md"
-  requires-python = ">=3.13"
-  version = "0.0.1"
+]
 
 [dependency-groups]
-  dev = ["ruff>=0.15.12", "ty>=0.0.35"]
+dev = ["ruff>=0.15.12", "ty>=0.0.35"]
