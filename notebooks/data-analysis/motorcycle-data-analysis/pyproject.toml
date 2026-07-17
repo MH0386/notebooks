@@ -1,13 +1,13 @@
 [project]
-  dependencies = [
-    "huggingface_hub>=0.30.0",
-    "ipykernel>=7.3.0",
-    "ipywidgets>=8.1.8",
-    "kagglehub>=1.0.0",
-    "matplotlib>=3.11.0",
-    "seaborn>=0.13.2",
-  ]
-  name = "motorcycle-data-analysis"
-  readme = "README.md"
-  requires-python = ">=3.12"
-  version = "0.0.1"
+name = "motorcycle-data-analysis"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "huggingface_hub>=0.30.0",
+  "ipykernel>=7.3.0",
+  "ipywidgets>=8.1.8",
+  "kagglehub>=1.0.0",
+  "matplotlib>=3.11.0",
+  "seaborn>=0.13.2",
+]
