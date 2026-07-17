@@ -1,14 +1,13 @@
 extends: MH0386
-pull_request_rules:
-  - name: Automatically queue valid Python Dependency Updates
-    conditions:
+queue_rules:
+  - name: Python Dependency Updates
+    allow_queue_branch_edit: true
+    autoqueue: true
+    max_checks_retries: 3
+    queue_conditions:
       - files ~= ^(uv.lock|pyproject.toml)$
       - author = renovate[bot]
-      - and:
-          - check-success = Test
-          - check-success = Check Jupyter Notebooks
-          - check-success = Check Dependency Compatibility
-          - check-success = Clean Jupyter Notebooks
-          - "check-success = DeepSource: Python"
-    actions:
-      queue:
+      - check-success = Check Dependency Compatibility
+      - check-success = Clean Jupyter Notebooks
+    merge_conditions:
+      - check-success = Check Jupyter Notebooks
