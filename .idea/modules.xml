@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/active-learning-with-machine-learning.iml" filepath="$PROJECT_DIR$/.idea/active-learning-with-machine-learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/autoencoder.iml" filepath="$PROJECT_DIR$/.idea/autoencoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/car-price-prediction.iml" filepath="$PROJECT_DIR$/.idea/car-price-prediction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/digit-recognizer.iml" filepath="$PROJECT_DIR$/.idea/digit-recognizer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/handwriting-recognition.iml" filepath="$PROJECT_DIR$/.idea/handwriting-recognition.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/inception-network.iml" filepath="$PROJECT_DIR$/.idea/inception-network.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/iris-classification-from-scratch.iml" filepath="$PROJECT_DIR$/.idea/iris-classification-from-scratch.iml" />
