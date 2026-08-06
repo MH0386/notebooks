@@ -1,8 +1,8 @@
+# queue rule 'Python Dependency Updates': `allow_queue_branch_edit` was turned off. It now requires `merge_method: merge-batch` or `merge_method: fast-forward`.
 extends: MH0386
 queue_rules:
   - name: Python Dependency Updates
-    allow_queue_branch_edit: true
-    autoqueue: true
+    allow_queue_branch_edit: false
     max_checks_retries: 3
     queue_conditions:
       - files ~= ^(uv.lock|pyproject.toml)$
@@ -11,3 +11,6 @@ queue_rules:
       - check-success = Clean Jupyter Notebooks
     merge_conditions:
       - check-success = Check Jupyter Notebooks
+merge_protections_settings:
+  auto_merge_conditions: true
+  reporting_method: check-runs
